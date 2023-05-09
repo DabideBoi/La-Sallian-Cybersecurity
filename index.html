@@ -2,56 +2,45 @@
 <html>
   <head>
     <title>Cybersecurity Challenge</title>
-    <style>
-      /* CSS code for buttons */
-      .hint-button {
-        background-color: #4CAF50; /* Green background */
-        border: none; /* Remove border */
-        color: white; /* White text */
-        padding: 10px 20px; /* Some padding */
-        text-align: center; /* Center text */
-        text-decoration: none; /* Remove underline */
-        display: inline-block; /* Make it inline */
-        font-size: 16px; /* Increase font size */
-        margin: 4px 2px; /* Add some margin */
-        cursor: pointer; /* Change cursor on hover */
-      }
-      /* CSS code for text input */
-      .flag-input {
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
+    
   </head>
   <body>
     <h1>DLSUD - Cybersecurity Challenge 2023</h1>
-    <h2>Question 1</h2>
-    <p>
-        Know what is the secret of the Green Garden
-        <button class="Download Image" onclick="downloadImage('https://media.discordapp.net/attachments/624110762691919882/1105490985359790131/garden1.jpg?width=624&height=468')">Download Image</button>
-    </p>
-    <button class="hint-button" id="hint1-1">Hint 1</button>
-    <button class="hint-button" id="hint1-2">Hint 2</button>
-    <button class="hint-button" id="hint1-3">Hint 3</button>
-    <br>
-    <input type="text" class="flag-input" id="flag1" placeholder="Enter flag for question 1">
-    <input type="button" class="submit-button" value="Submit" onclick="checkFlag(1)">
-    <br>
-    <h2>Question 2</h2>
-    <p>
-            This tar file is sleep. IT IS very tar-ed
+    <div class="question">
+      <h2>Question 1</h2>
+      <p>
+          Know what is the secret of the Green Garden
+          <button class="Download Image" onclick="downloadImage('https://media.discordapp.net/attachments/624110762691919882/1105490985359790131/garden1.jpg?width=624&height=468')">Download Image</button>
+      </p>
+      <div class="hint-container">
+        <button class="hint-button" id="hint1-1">Hint 1</button>
+        <button class="hint-button" id="hint1-2">Hint 2</button>
+        <button class="hint-button" id="hint1-3">Hint 3</button>  
+      </div>
+      <br>
+      <input type="text" class="flag-input" id="flag1" placeholder="Enter flag for question 1">
+      <input type="button" class="submit-button" value="Submit" onclick="checkFlag(1)">
+    </div>
+    
+    <div class="question">
+      <h2>Question 2</h2>
+      <p>
+              This tar file is sleep. IT IS very tar-ed
 
-        <button class="Download Image" onclick="window.location.href='https://cdn.discordapp.com/attachments/624110762691919882/1105501435757592607/1000.tar'">Download .tar</button>
-    </p>
-    <button class="hint-button" id="hint2-1">Hint 1</button>
-    <button class="hint-button" id="hint2-2">Hint 2</button>
-    <button class="hint-button" id="hint2-3">Hint 3</button>
-    <br>
-    <input type="text" class="flag-input" id="flag2" placeholder="Enter flag for question 2">
-    <input type="button" class="submit-button" value="Submit" onclick="checkFlag(2)">
-    <script src="app.js"></script> 
-  </body>
+          <button class="Download Image" onclick="window.location.href='https://cdn.discordapp.com/attachments/624110762691919882/1105501435757592607/1000.tar'">Download .tar</button>
+      </p>
+      <div class="hint-container">
+        <button class="hint-button" id="hint2-1">Hint 1</button>
+        <button class="hint-button" id="hint2-2">Hint 2</button>
+        <button class="hint-button" id="hint2-3">Hint 3</button>
+      </div>
+      <input type="text" class="flag-input" id="flag2" placeholder="Enter flag for question 2">
+      <input type="button" class="submit-button" value="Submit" onclick="checkFlag(2)">
+    </div>
+  
+  </body    <script src="app.js"></script> 
+  <script src="app.js"></script> 
+  >
+  <script src="app.js"></script> 
 </html>
