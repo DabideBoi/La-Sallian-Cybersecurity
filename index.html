@@ -6,33 +6,63 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body class="bg-dark">
-    <div class="container py-5">
-        <h1 class="text-light mb-5">DLSUD - Cybersecurity Challenge 2023</h1>
-        <div class="question mb-5">
-            <h2 class="text-light mb-3">Challenge 1</h2>
-            <p class="text-light mb-4">Know what is the secret of the Green Garden</p> 
-            <button class="btn btn-primary btn-success mb-3" onclick="window.location.href='https://dabideboi.github.io/La-Sallian-Cybersecurity/tar/garden_image.tar.xz'">Download Image</button>
-            <div class="hint-container mb-4">
-                <button class="btn btn-primary me-3" id="hint1-1">Hint 1</button>
-                <button class="btn btn-primary me-3" id="hint1-2">Hint 2</button>
-                <button class="btn btn-primary" id="hint1-3">Hint 3</button>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand">
+          De La Salle University - Dasmarinas, CSD Week, Cybersecurity Competiton
+        </a>
+      </div>
+    </nav>
+
+      <div id="carousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+
+                <div class="question mb-5">
+                  <h2 class="text-light mb-3">Challenge #1</h2>
+                  <h5 class="text-light mb-4 display-5">Know what is the secret of the Green Garden</h5>
+                  <button class="btn btn-primary btn-success mb-3" onclick="window.location.href='https://dabideboi.github.io/La-Sallian-Cybersecurity/tar/garden_image.tar.xz'">Download Image</button>
+                  <div class="hint-container mb-4">
+                      <button class="btn btn-primary me-3" id="hint1-1">Hint 1</button>
+                      <button class="btn btn-primary me-3" id="hint1-2">Hint 2</button>
+                      <button class="btn btn-primary" id="hint1-3">Hint 3</button>
+                  </div>
+                  <input type="text" class="form-control mb-2" id="flag1" placeholder="Enter flag for question 1">
+                  <button class="btn btn-outline-light" onclick="checkFlag(1)">Submit</button>
+                </div>
+
             </div>
-            <input type="text" class="form-control mb-2" id="flag1" placeholder="Enter flag for question 1">
-            <button class="btn btn-outline-light" onclick="checkFlag(1)">Submit</button>
-        </div>
-        <div class="question mb-5">
-            <h2 class="text-light mb-3">Challenge 2</h2>
-            <p class="text-light mb-4">This tar file is sleepy. IT IS very tar-ed</p>
-            <button class="btn btn-primary btn-success mb-3" onclick="window.location.href='https://dabideboi.github.io/La-Sallian-Cybersecurity/tar/1000.tar'">Download .tar</button>
-            <div class="hint-container mb-4">
-                <button class="btn btn-primary me-3" id="hint2-1">Hint 1</button>
-                <button class="btn btn-primary me-3" id="hint2-2">Hint 2</button>
-                <button class="btn btn-primary" id="hint2-3">Hint 3</button>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="question mb-5">
+                <h2 class="text-light mb-3">Challenge #2</h2>
+                <h5 class="text-light mb-4">This tar file is sleepy. IT IS very tar-ed</h5>
+                <button class="btn btn-primary btn-success mb-3" onclick="window.location.href='https://dabideboi.github.io/La-Sallian-Cybersecurity/tar/1000.tar'">Download .tar</button>
+                <div class="hint-container mb-4">
+                    <button class="btn btn-primary me-3" id="hint2-1">Hint 1</button>
+                    <button class="btn btn-primary me-3" id="hint2-2">Hint 2</button>
+                    <button class="btn btn-primary" id="hint2-3">Hint 3</button>
+                </div>
+                <input type="text" class="form-control mb-2" id="flag2" placeholder="Enter flag for question 2">
+                <button class="btn btn-outline-light" onclick="checkFlag(2)">Submit</button>
+              </div>
             </div>
-            <input type="text" class="form-control mb-2" id="flag2" placeholder="Enter flag for question 2">
-            <button class="btn btn-outline-light" onclick="checkFlag(2)">Submit</button>
+          </div>
         </div>
+        <button class="carousel-control-prev cb" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next cb" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>      
+        </button>
+      </div>
+
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 </html>
