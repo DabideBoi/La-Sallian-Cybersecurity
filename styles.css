@@ -9,6 +9,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.cb {
+  opacity: 10%;
+}
+
 .carousel-item {
   margin-top: 15vh;
   margin-bottom: 15vh;
