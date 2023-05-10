@@ -1,8 +1,20 @@
+html {
+  height: 100vh;
+}
+
 body {
+  height: 100vh;
   background-color: #1a1a1a;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
 }
+
+.carousel-item {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  padding-bottom: 15vh;
+}
+
 h1, h2 {
   color: #ffffff;
 }
