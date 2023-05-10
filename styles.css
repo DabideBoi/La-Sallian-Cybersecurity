@@ -10,7 +10,11 @@ body {
 }
 
 .cb {
-  opacity: 10%;
+  border: #1a1a1a;
+  background-color: #393d45;
+  color: #ffffff;
+  opacity: 60%;
+  padding: 0.2%;
 }
 
 .carousel-item {
