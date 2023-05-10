@@ -12,7 +12,7 @@ async function hashFlag(flagValue) {
       "6acf4871ca7ef84ea72bf0331da49ad11834540be7acdd80eb1c7ef05dbf13c5"
     ];
   
-    const flagInputs = document.querySelectorAll(".flag-input");
+    const flagInputs = document.querySelectorAll(".form-control");
     const flagValue = flagInputs[questionNum - 1].value;
     const hashedValue = await hashFlag(flagValue);
   
@@ -45,23 +45,7 @@ document.getElementById("hint2-1").onclick = function() {
     document.getElementById("hint2-3").onclick = function() {
     alert("Hint 3: Script your way and open the tar file 1000 times")
     };
-
-function downloadImage(url) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-    xhr.responseType = 'blob';
-    xhr.onload = function() {
-      var urlCreator = window.URL || window.webkitURL;
-      var url = urlCreator.createObjectURL(this.response);
-      var tag = document.createElement('a');
-      tag.href = url;
-      tag.download = "garden.jpg"; // Replace with your desired file name
-      document.body.appendChild(tag);
-      tag.click();
-      document.body.removeChild(tag);
-    };
-    xhr.send();
-  }
+    
 function downloadFile(url) {
     const filename = url.substring(url.lastIndexOf("/") + 1);
     fetch(url)
